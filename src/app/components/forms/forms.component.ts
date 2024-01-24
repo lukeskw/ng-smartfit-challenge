@@ -1,6 +1,7 @@
 import { NgOptimizedImage } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { GetUnitsService } from '../../services/get-units.service';
 
 @Component({
   selector: 'app-forms',
@@ -14,10 +15,15 @@ export class FormsComponent implements OnInit{
   formGroup!: FormGroup;
 
   constructor(
-    private formBuilder: FormBuilder
+    private formBuilder: FormBuilder,
+    private service: GetUnitsService
   ){ }
 
   ngOnInit(): void {
+    this.service.getAllUnits().subscribe(data => {
+      console.log(data)
+    })
+
     this.formGroup = this.formBuilder.group({
       hourRadio: '',
       showClosed: false,
