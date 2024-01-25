@@ -7,6 +7,7 @@ import { CardsListComponent } from './components/cards-list/cards-list.component
 import { BehaviorSubject } from 'rxjs';
 import { Location } from './interfaces/unit.interface';
 import { GetUnitsService } from './services/get-units.service';
+import { LabelsComponent } from './components/labels/labels.component';
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,8 @@ import { GetUnitsService } from './services/get-units.service';
     RouterOutlet,
     HeaderComponent,
     FormsComponent,
-    CardsListComponent
+    CardsListComponent,
+    LabelsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

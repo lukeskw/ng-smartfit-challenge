@@ -1,6 +1,7 @@
 <div class="container">
   <app-header></app-header>
   <app-forms (submitEvent)="onSubmitEvent()"></app-forms>
+  <app-labels></app-labels>
   @if (showList | async) {
     <app-cards-list [unitsList]="unitList"></app-cards-list>
   }
