@@ -1,6 +1,9 @@
 <div class="container">
   <app-header></app-header>
-  <app-forms></app-forms>
+  <app-forms (submitEvent)="onSubmitEvent()"></app-forms>
+  @if (showList | async) {
+    <app-cards-list [unitsList]="unitList"></app-cards-list>
+  }
 
 </div>
 <router-outlet></router-outlet>
