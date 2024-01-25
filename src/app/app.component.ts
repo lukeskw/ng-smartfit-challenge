@@ -8,6 +8,7 @@ import { BehaviorSubject } from 'rxjs';
 import { Location } from './interfaces/unit.interface';
 import { GetUnitsService } from './services/get-units.service';
 import { LabelsComponent } from './components/labels/labels.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -18,7 +19,8 @@ import { LabelsComponent } from './components/labels/labels.component';
     HeaderComponent,
     FormsComponent,
     CardsListComponent,
-    LabelsComponent
+    LabelsComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

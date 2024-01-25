@@ -1,0 +1,35 @@
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-top: 3rem;
+
+  gap: 3rem;
+
+  .logo-container {
+    background: var(--dark-grey);
+    padding: 2.5rem;
+    width: 100%;
+
+    gap: 4rem;
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      height: 6rem;
+    }
+    p{
+      text-align: center;
+    }
+  }
+
+}
