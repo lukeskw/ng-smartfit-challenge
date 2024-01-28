@@ -1,3 +1,8 @@
+@if (unitsList.length === 0) {
+  <div class="empty-list">
+    <h2 class="not-found">Nenhuma unidade encontrada</h2>
+  </div>
+}
 <ul class="card-list">
   @for (card of unitsList; track unitsList) {
     <li>
