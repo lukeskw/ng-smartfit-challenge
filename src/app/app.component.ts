@@ -26,6 +26,7 @@ import { FooterComponent } from './components/footer/footer.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
+  title = 'ng-smartfit-challenge'
   showList = new BehaviorSubject(false)
   unitList: Location[] = [];
 
@@ -36,5 +37,9 @@ export class AppComponent {
   onSubmitEvent(){
     this.unitList = this.unitService.getFilteredUnits();
     this.showList.next(true);
+  }
+
+  onClearEvent(){
+    this.showList.next(false);
   }
 }
