@@ -1,0 +1,20 @@
+# Use the official Cypress image
+FROM cypress/included:latest
+
+# Set the working directory
+WORKDIR /usr/src/app
+
+# Copy package.json and package-lock.json to install dependencies
+COPY package*.json ./
+
+# Install app dependencies
+RUN npm install
+
+# Copy the rest of the application code
+COPY . .
+
+# Expose the port Cypress runs on
+EXPOSE 8080
+
+# Run Cypress tests
+CMD ["npm", "run", "cypress:run"]
