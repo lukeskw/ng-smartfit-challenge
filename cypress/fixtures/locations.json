@@ -1,0 +1,76 @@
+{
+  "locations": [
+    {
+      "id": 10998878976021,
+      "title": "Volta Redonda",
+      "content": "\n<p>Av. Amaral Peixoto, 555 &#8211; Centro<br>Volta Redonda, RJ</p>\n",
+      "opened": true,
+      "mask": "required",
+      "towel": "required",
+      "fountain": "partial",
+      "locker_room": "allowed",
+      "schedules": [
+        {
+          "weekdays": "Seg. à Sex.",
+          "hour": "06h às 22h"
+        },
+        {
+          "weekdays": "Sáb.",
+          "hour": "09h às 18h"
+        },
+        {
+          "weekdays": "Dom.",
+          "hour": "Fechada"
+        }
+      ]
+    },
+    {
+      "id": 10998878976096,
+      "title": "Teresina Shopping",
+      "content": "\n<p>Av. Raul Lopes, 1000 &#8211; Noivos<br>Teresina, PI</p>\n",
+      "opened": true,
+      "mask": "required",
+      "towel": "required",
+      "fountain": "partial",
+      "locker_room": "allowed",
+      "schedules": [
+        {
+          "weekdays": "Seg. à Sex.",
+          "hour": "06h às 22h"
+        },
+        {
+          "weekdays": "Sáb.",
+          "hour": "Fechada"
+        },
+        {
+          "weekdays": "Dom.",
+          "hour": "Fechada"
+        }
+      ]
+    },
+    {
+      "id": 10998878976092,
+      "title": "GV Shopping",
+      "content": "\n<p>Rua Sete de Setembro, 3500 &#8211; Centro<br>Governador Valadares, MG</p>\n",
+      "opened": true,
+      "mask": "recommended",
+      "towel": "required",
+      "fountain": "partial",
+      "locker_room": "allowed",
+      "schedules": [
+        {
+          "weekdays": "Seg. à Sex.",
+          "hour": "06h às 23h"
+        },
+        {
+          "weekdays": "Sáb.",
+          "hour": "09h às 18h"
+        },
+        {
+          "weekdays": "Dom.",
+          "hour": "Fechada"
+        }
+      ]
+    }
+  ]
+}
